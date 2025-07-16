@@ -27,72 +27,25 @@
 
         <main>
             <section id="carrito">
-
                 <h1 class="titulo">Mi Carrito</h1>
                 <div class="mensajes">area de mensajes</div>
-
-                <button class="vaciar">Vaciar Carrito</button>
                 <div id="itemsCarrito">
-                    <div class="prodCarrito">
-                        <img src="images/productos/arandanos.jpg" alt="">
-                        <div class="detalle">
-                            <button><i class="fa-solid fa-trash-can"></i></button>
-                            <p>Producto 1</p>
-                            <div class="agregar">
-                                <div class="amount">
-                                    <button class="restar"><i class="fa-solid fa-square-minus"></i></button>
-                                    <input type="number" name="cant" id="cant" min="0" value="1">
-                                    <button class="sumar"><i class="fa-solid fa-square-plus"></i></button>
-                                </div>
-                                <div>
-                                    <p class="subtotal">{precio U}</p>
-                                    <p class="precio">${subTotal}</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="prodCarrito">
-                        <img src="images/productos/cerezas.jpg" alt="">
-                        <div class="detalle">
-                            <button><i class="fa-solid fa-trash-can"></i></button>
-                            <p>Producto 2</p>
-                            <div class="agregar">
-                                <div class="amount">
-                                    <button class="restar"><i class="fa-solid fa-square-minus"></i></button>
-                                    <input type="number" name="cant" id="cant" min="0" value="1">
-                                    <button class="sumar"><i class="fa-solid fa-square-plus"></i></button>
-                                </div>
-                                <div>
-                                    <p class="subtotal">{precio U}</p>
-                                    <p class="precio">${subTotal}</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                    
+                   <!-- aca cargan los productos almacenados en el local storage-->
 
                 </div>
-
                 <div id="total">
-                    <div class="total">
-                        <p>TOTAL</p>
-                        <p class="precio">$${total}</p>
-                    </div>
-
-                    <button class="comprar" id="finalizarCompra">Comprar Ahora</button>
-                    <button class="vaciar" id="vaciar">Vaciar Carrito</button>
-                </div>
-
-
-
+                    <!--Aca carga el total a pagar y el boton finalizar compra-->    
+                </div>             
             </section>
         </main>
         <footer></footer>
         <div>
 
             <script src="./js/modulos.js"></script>
+            <script src="./js/carrito.js"></script>
+            <script src="./js/carritoModulos.js"></script>
+            <script src="./js/mostrarMensajes.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // recuperarFavoritos()
+    recuperarFavoritos()
     // let favoritos = JSON.parse(localStorage.getItem("favoritos")) || []
 
     const endpoint = './data/datos.json'
@@ -36,26 +36,26 @@ document.addEventListener("DOMContentLoaded", () => {
                         <a href="opiniones.html" class="resenias">ver reseñas</a>
                     </div>`
 
-            // const prodEncontrado = favoritos.find(p => p.id == item.id)
+            const prodEncontrado = favoritos.find(p => p.id == item.id)
 
-            // if (!prodEncontrado) {
-            //     card.innerHTML += `<div class="bottom">
-            //             <div class="precio">
-            //             <span>$${item.price}</span>                      
-            //             <button class="favorito"><i class="fa-solid fa-heart"></i></button>
-            //             </div>`
-            // } else {
-            //     card.innerHTML += `<div class="bottom">
-            //             <div class="precio">
-            //             <span>$${item.price}</span>                      
-            //             <button class="favorito"><i class="fa-solid fa-heart-circle-check"></i></button>
-            //             </div>`
-            // }
-            card.innerHTML += `<div class="bottom">
-                       <div class="precio">
+            if (!prodEncontrado) {
+                card.innerHTML += `<div class="bottom">
+                        <div class="precio">
                         <span>$${item.price}</span>                      
-                       <button class="favorito"><i class="fa-solid fa-heart"></i></button>
-                       </div>`
+                        <button class="favorito"><i class="fa-solid fa-heart"></i></button>
+                        </div>`
+            } else {
+                card.innerHTML += `<div class="bottom">
+                        <div class="precio">
+                        <span>$${item.price}</span>                      
+                        <button class="favorito"><i class="fa-solid fa-heart-circle-check"></i></button>
+                        </div>`
+            }
+            // card.innerHTML += `<div class="bottom">
+            //            <div class="precio">
+            //             <span>$${item.price}</span>                      
+            //            <button class="favorito"><i class="fa-solid fa-heart"></i></button>
+            //            </div>`
             card.innerHTML += `
                         <div class="agregar">
                             <div class="amount">

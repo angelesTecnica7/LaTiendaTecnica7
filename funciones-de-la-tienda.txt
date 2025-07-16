@@ -1,0 +1,32 @@
+CARGAR PRODUCTOS DINAMICAMENTE DESDE ARCHIVO JSON / BASE DE DATOS:
+1) Crear archivo JSON
+2) Cargar producto de la tienda a partir de este archivo (Sincronico, asincronico, externo)
+
+CARRITO:
+1) Agregar al CARRITO
+2) Actualizar cantidad
+3) Eliminar un producto del CARRITO
+4) Vaciar CARRITO
+5) calcular subtotales y total
+6) boton finalizar compra (mensaje y Vaciar carrito)
+7) Actualizar carrito a cada modificación
+
+FAVORITOS:
+1) Cambiar icono (togle- on/off) - Agregar y eliminar desde el icono
+2) Agregar a FAVORITOS
+3) eliminar de FAVORITOS (desde página FAVORITOS)
+4) Limpiar FAVORITOS
+
+USUARIOS:
+1) Registrar nuevo USUARIOS
+2) iniciar sesion
+3) recuperar contraseña
+
+ADMINISTRACION:
+1) Mostrar productos (GET)
+2) Agregar nuevo producto (POST)
+3) Modificar datos de un producto (PUT)
+4) Eliminar producto (DELETE)
+
+BUSCADOR:
+1) Buscar producto/s
