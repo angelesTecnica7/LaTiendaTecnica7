@@ -73,9 +73,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             //agregar al carrito
             card.querySelector("#addCarrito").onclick = () => {
-                // const cant = parseInt(card.querySelector('[name="cant"]').value)
-                // agregarAlCarrito(item, cant)
-                agregarAlCarrito(item)
+                const cant = parseInt(card.querySelector('[name="cant"]').value)
+                agregarAlCarrito(item, cant)
+                
 
             }
 

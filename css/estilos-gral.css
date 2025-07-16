@@ -75,6 +75,7 @@ img.inicial {
 }
 
 .mensajes {
+    display: none;
     position: fixed;
     top: 150px;
     right: 10px;
